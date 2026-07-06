@@ -1,0 +1,263 @@
+/* src/pages/WellnessHubPage.css */
+.hub-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.hub-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.hub-header h1 {
+    font-size: 2.8rem;
+    color: #00A896;
+}
+.hub-header p {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+/* Recommendation Section */
+.recommendation-section {
+    background: linear-gradient(to right, #00A896, #008f80);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+}
+.recommendation-section h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+/* Choice Section */
+.choice-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.choice-card {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.choice-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.15);
+}
+.choice-card h3 {
+    font-size: 1.8rem;
+    color: #00A896;
+    margin-top: 0;
+}
+.choice-card p {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+/* Content Display Section */
+.content-display {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+}
+.content-display h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.filter-group label {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.toggle-buttons {
+    display: inline-flex;
+    border: 1px solid #dee2e6;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.toggle-buttons button {
+    background-color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.toggle-buttons button.active {
+    background-color: #00A896;
+    color: #fff;
+}
+.filters select {
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* --- Shared Card Styles --- */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.plan-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 1.5rem;
+}
+.workout-card .card-content {
+    text-align: center;
+}
+.card-content h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+.sets-reps {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #00A896;
+}
+.back-button {
+    background: none; border: none; color: #007bff; cursor: pointer;
+    font-size: 1rem; margin-bottom: 1.5rem; font-weight: bold;
+}
+/* src/pages/WellnessHubPage.css */
+/* (Keep all your existing styles from the previous version) */
+
+/* --- ADD THESE NEW STYLES for Gender Selection --- */
+.gender-select-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.gender-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gender-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.gender-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.gender-card h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: white;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    text-align: center;
+}
+/* src/pages/WellnessHubPage.css */
+/* (Keep all your existing styles from the previous version) */
+
+/* --- ADD THESE NEW STYLES for Gender Selection --- */
+.gender-select-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.gender-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gender-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.gender-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.gender-card h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: white;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    text-align: center;
+}
+.submit-button {
+    background-color: #00A896; /* Green color for submit */
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color:#00A896;
+    transform: translateY(-2px);
+}
