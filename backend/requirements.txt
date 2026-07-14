@@ -7,3 +7,10 @@ scikit-learn
 Pillow
 python-multipart
 matplotlib
+
+
+passlib[bcrypt]
+python-jose[cryptography]
+openai
+requests
+joblib
